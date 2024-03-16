@@ -105,12 +105,12 @@ public class Server {
 
          String query2="select * from books_status";
          ResultSet result2=st.executeQuery(query2);
-         Vector<books_status> books=new Vector<books_status>();
+         Vector<Books_status> books=new Vector<Books_status>();
          while(result2.next()){
             String book=result2.getString("book");
             String owner=result2.getString("owner");
             String status=result2.getString("status");
-            books_status r= new books_status(book,owner,status); 
+            Books_status r= new Books_status(book,owner,status); 
             books.addElement(r);   
          }
          st.close();
