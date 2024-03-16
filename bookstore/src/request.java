@@ -1,4 +1,4 @@
-public class request {
+public class Request {
     //borrower username
     String busername;
     //lendar useranme
@@ -6,7 +6,7 @@ public class request {
     String book;
     String status;
 
-    request(String busername,String lusername,String book,String status){
+    Request(String busername,String lusername,String book,String status){
         this.busername=busername;
         this.lusername=lusername;
         this.book=book;

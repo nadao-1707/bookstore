@@ -71,12 +71,12 @@ public class Server {
          Statement st = connection.con.createStatement();
          String query="select * from requests where lusername='" + lusername + "' ";
          ResultSet result=st.executeQuery(query);
-         Vector<request> requests=new Vector<request>();
+         Vector<Request> requests=new Vector<Request>();
          while(result.next()){
             String busermane=result.getString("busername");
             String book=result.getString("book");
             String status=result.getString("status");
-            request r= new request(busermane,lusername,book,status); 
+            Request r= new Request(busermane,lusername,book,status); 
             requests.addElement(r);   
          }
          st.close();
@@ -87,5 +87,5 @@ public class Server {
       }
    }
 
-   
+
 }
