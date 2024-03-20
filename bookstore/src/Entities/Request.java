@@ -1,3 +1,4 @@
+package Entities;
 public class Request {
     //borrower username
     String busername;
@@ -6,7 +7,7 @@ public class Request {
     String book;
     String status;
 
-    Request(String busername,String lusername,String book,String status){
+    public Request(String busername,String lusername,String book,String status){
         this.busername=busername;
         this.lusername=lusername;
         this.book=book;
